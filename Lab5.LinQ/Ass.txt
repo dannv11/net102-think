@@ -1,0 +1,28 @@
+Xây dựng chương trình c# giải quyết các vấn đề sau:
+
+1. Tạo 3 class:
+ThongTinLienHe{Loai tring, ThongTin string}
+CongTy{MaCongTy string, TenCongTy string, DiaChi string, LienHe List<ThongTinLienHe>}
+SanPham{MaSanPham string , TenSanPham string, MauSac string, SoLuongCo int, GiaBan float}
+CungUng{MaCongTy string, MaSanPham string, SoLuongCungUng int, NgayCungUng DateTime}
+
++ Thêm các hàm in ra màn hình của từng class
++ Tạo class service với các hàm GetCongTy trả về danh sách công ty, GetSanPham trả về danh sách sản phẩm,
+GetCungUng trả về danh sách cung ứng; Constructor khởi tạo 3 công ty, 5 sản phẩm, 5 cung ứng, và các hàm cần thiết
+
+/// Convert string to datetime
+///DateTime myDate = DateTime.ParseExact("10/10/2022", "dd/MM/yyyy",
+///                                       System.Globalization.CultureInfo.InvariantCulture);
+///
+// var a = Console.ReadLine();
+// DateTime date = DateTime.ParseExact(a, "dd/MM/yyyy",
+// System.Globalization.CultureInfo.InvariantCulture);
+2. Tạo 1 hàm sử dụng truy vấn linq hiển thị ra danh sách gồm Tên sản phẩm,
+ màu sắc, số lượng, giá bán của công ty với tên công ty và ngày cung cấp nhập vào từ bàn phím
+ 
+3. Viết hàm thêm mới công ty, sản phẩm, cung ứng ,sử dụng truy vấn linq kiểm tra công ty nếu công ty đã tồn tại(trùng tên và địa chỉ)
+thì hiển thị thông báo công ty đã tồn tại,
+ ngược lại thêm vào danh sách công ty và hiển thị thông báo thêm thành công
+ 
+4.Viết hàm sử dụng truy vấn linq selectMany hiển thị ra danh sách công ty cùng với danh sách thông tin liên hệ của công ty
+5.Viết hàm main với menu chức năng cần thiết để sử dụng các method service đã viết
